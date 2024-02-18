@@ -90,7 +90,7 @@
             <h2 class="text-4xl inter font-bold text-theme">Voyager Express</h2>
             <p class="mb-5 text-white text-lg" >
                 "Welcome to our bus ticket website, where every click brings you closer to your next adventure! Book now and let the journey begin."</p>
-            <button id="btn-buy" class="btn btn-primary bg-theme text-white border-0">Buy Tickets</button>
+            <button onclick="forScrollToSection()" id="btn-buy" class="btn btn-primary bg-theme text-white border-0">Buy Tickets</button>
           </div>
         </div>
          <div class="flex mx-auto  gap-7 absolute -bottom-36"> 
@@ -198,7 +198,7 @@
         <button class="btn border-2 border-theme text-theme bg-white items-center justify-center p-3 ">
            <div class=" flex gap-2 items-center justify-center  ">
             <img src="images/seat-green.png" alt="">
-            <p  class="text-theme text-lg font-bold "><span>40</span  id="seatLeft-ID" >seat Left</p>
+            <p  class="text-theme text-lg font-bold "><span id="seatLeft-ID">40 </span  id="seatLeft-ID" >seat Left</p>
             
     
            </div>
@@ -255,7 +255,7 @@
 </div>
 
 <!-- seat-book section -->
-<div class="section-container m-4 flex  justify-center gap-5 ">
+<div id="seatBookSection-ID" class="section-container m-4 flex  justify-center gap-5 ">
    <div class="seat-product flex-1">
      <h2 class="text-2xl font-bold my-4 ">Select Your Seat</h2>
 
@@ -271,7 +271,7 @@
     <div class="flex justify-end my-4"><img src="images/Group 56.png" alt=""></div>
 
 
-<div id="seat-container" class=" grid grid-cols-5 gap-8 ">
+<div  class=" grid grid-cols-5 gap-8 ">
         <div class="grid grid-cols-1 gap-8 ">
         <p class="ml-6 text-gray-600 text-4xl font-bold ">A</p>
         <p class="ml-6 text-gray-600 text-4xl font-bold ">B</p>
@@ -279,15 +279,15 @@
         <p class="ml-6 text-gray-600 text-4xl font-bold ">D</p>
        
         </div>
-<div class="grid grid-cols-2 gap-8 col-span-4 ">
-<button id="A1" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway" >A1</button>
-<button id="A2" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">A2</button>
-<button id="B1" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">B1</button>
-<button id="B2" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">B2</button>
-<button id="C1" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">C1</button>
-<button id="C2" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">C2</button>
-<button id="D1" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">D1</button>
-<button id="D2" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">D2</button>
+<div id="seatContainer-ID" class="grid grid-cols-2 gap-8 col-span-4 ">
+<button id="A1" class="btn bg-slate-300 text-white w-auto h-auto p-5 text-4xl font-extrabold raleway" >A1</button>
+<button id="A2" class="btn bg-slate-300 text-white w-auto h-auto p-5 text-4xl font-extrabold raleway">A2</button>
+<button id="B1" class="btn bg-slate-300 text-white w-auto h-auto p-5 text-4xl font-extrabold raleway">B1</button>
+<button id="B2" class="btn bg-slate-300 text-white w-auto h-auto p-5 text-4xl font-extrabold raleway">B2</button>
+<button id="C1" class="btn bg-slate-300 text-white w-auto h-auto p-5 text-4xl font-extrabold raleway">C1</button>
+<button id="C2" class="btn bg-slate-300 text-white w-auto h-auto p-5 text-4xl font-extrabold raleway">C2</button>
+<button id="D1" class="btn bg-slate-300 text-white w-auto h-auto p-5 text-4xl font-extrabold raleway">D1</button>
+<button id="D2" class="btn bg-slate-300 text-white w-auto h-auto p-5 text-4xl font-extrabold raleway">D2</button>
 
 
 </div>
@@ -379,7 +379,8 @@
 
 </div>
 
-
+<script src="scripts/utility.js"></script>
     <script src="scripts/index.js"></script>
+   
 </body>
 </html>
