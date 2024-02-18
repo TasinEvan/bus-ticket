@@ -254,6 +254,131 @@
 
 </div>
 
+<!-- seat-book section -->
+<div class="section-container m-4 flex  justify-center gap-5 ">
+   <div class="seat-product flex-1">
+     <h2 class="text-2xl font-bold my-4 ">Select Your Seat</h2>
+
+
+    <div class="seatshow flex justify-between  ">
+<div class=" flex gap-2"> <img src="images/seat-gray.png" alt=""> <p class="text-gray-400 font-bold">Available</p></div>
+<div class=" flex gap-2"> <img src="images/seat-green-filled.png" alt=""> <p class="text-theme font-bold">Selected</p></div>
+
+
+
+    </div>
+
+    <div class="flex justify-end my-4"><img src="images/Group 56.png" alt=""></div>
+
+
+<div id="seat-container" class=" grid grid-cols-5 gap-8 ">
+        <div class="grid grid-cols-1 gap-8 ">
+        <p class="ml-6 text-gray-600 text-4xl font-bold ">A</p>
+        <p class="ml-6 text-gray-600 text-4xl font-bold ">B</p>
+        <p class="ml-6 text-gray-600 text-4xl font-bold ">C</p>
+        <p class="ml-6 text-gray-600 text-4xl font-bold ">D</p>
+       
+        </div>
+<div class="grid grid-cols-2 gap-8 col-span-4 ">
+<button id="A1" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway" >A1</button>
+<button id="A2" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">A2</button>
+<button id="B1" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">B1</button>
+<button id="B2" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">B2</button>
+<button id="C1" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">C1</button>
+<button id="C2" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">C2</button>
+<button id="D1" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">D1</button>
+<button id="D2" class="btn w-auto h-auto p-5 text-4xl font-extrabold text-gray-400 raleway">D2</button>
+
+
+</div>
+
+        
+
+
+    </div>
+   </div>
+
+   <div class="seatInfo-Container my-7">
+<div class=" bg-slate-200  rounded-xl p-5">     
+    <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th></th>
+        <th class="text-xl text-black font-bold inter">Seat<span id="seat-booking" class="text-xl font-bold bg-theme px-2 text-white rounded-full">0</span></th>
+        <th class="text-xl text-black font-bold inter">Class</th>
+        <th class="text-xl text-black font-bold inter">Price</th>
+        <div class="border border-dashed border-gray-500 w-full h-0"></div>
+      </tr>
+    </thead>
+    <tbody id="table-row">
+    
+       
+    <hr>
+    
+
+    </tbody>
+    
+  </table>
+  <div class="border border-1 border-gray-600 w-full h-0"></div>
+
+  <div class=" total-cost flex justify-between mx-7 ">
+      <h5 class="text-xl text-black font-bold">Total Price</h5>
+      <h5 class="text-xl text-black font-bold">BDT <span id="total-cost">0</span></h5>
+    </div>
+
+
+<div class=" coupon flex justify-center">
+  
+  <div class="join rounded-2xl my-6  ">
+      <input id="input-Id" class="input input-bordered join-item" placeholder="Have any coupon?"/>
+      <button id="apply-btn-ID" disabled class="btn join-item rounded-2xl bg-theme border-none text-white ">Apply</button>
+    </div>
+</div>
+
+<div class=" total-cost flex justify-between mx-7 ">
+  <h5 class="text-xl text-black font-bold">Grand Price</h5>
+  <h5 class="text-xl text-black font-bold">BDT <span id="grand-cost">0</span></h5>
+</div>
+</div>
+
+<div class="input container flex flex-col items-center">
+    <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-lg text-black font-bold ">passenger name*</span>
+          
+        </div>
+        <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs" />
+        
+      </label>
+    <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-lg text-black font-bold ">Phone number*</span>
+          
+        </div>
+        <input id="numberInput-ID" type="text" placeholder="Enter Your Phone Number " class="input input-bordered w-full max-w-xs" />
+        
+      </label>
+    <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-lg text-black font-bold ">Email ID</span>
+          
+        </div>
+        <input type="email" placeholder="Enter Your Mail" class="input input-bordered w-full max-w-xs" />
+        
+      </label>
+
+      <button disabled id="nextBtn-ID" class="btn btn-outline my-6 bg-theme w-full border-none text-white ">Next</button>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
 
     <script src="scripts/index.js"></script>
 </body>
