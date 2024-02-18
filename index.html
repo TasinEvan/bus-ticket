@@ -298,27 +298,27 @@
     </div>
    </div>
 
-   <div class="seatInfo-Container my-7">
+   <div class="seatInfo-Container">
 <div class=" bg-slate-200  rounded-xl p-5">     
-    <table class="table">
+    <table id="table-ID" class="table">
     <!-- head -->
     <thead>
-      <tr>
+      <tr id="oldRow">
         <th></th>
-        <th class="text-xl text-black font-bold inter">Seat<span id="seat-booking" class="text-xl font-bold bg-theme px-2 text-white rounded-full">0</span></th>
+        <th class="text-xl text-black font-bold inter">Seat<span id="seat-booking" class="text-xl font-bold bg-theme  text-white rounded-full">0</span></th>
         <th class="text-xl text-black font-bold inter">Class</th>
         <th class="text-xl text-black font-bold inter">Price</th>
         <div class="border border-dashed border-gray-500 w-full h-0"></div>
       </tr>
     </thead>
-    <tbody id="table-row">
+    <tbody >
     
        
-    <hr>
+       
     
 
     </tbody>
-    
+   
   </table>
   <div class="border border-1 border-gray-600 w-full h-0"></div>
 
@@ -330,9 +330,9 @@
 
 <div class=" coupon flex justify-center">
   
-  <div class="join rounded-2xl my-6  ">
+  <div id="couponBox" class="join rounded-2xl my-6  ">
       <input id="input-Id" class="input input-bordered join-item" placeholder="Have any coupon?"/>
-      <button id="apply-btn-ID" disabled class="btn join-item rounded-2xl bg-theme border-none text-white ">Apply</button>
+      <button id="apply-btn-ID"  disabled class="btn join-item rounded-2xl bg-theme border-none text-white ">Apply</button>
     </div>
 </div>
 
