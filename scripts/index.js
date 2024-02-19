@@ -1,5 +1,7 @@
 
-// utility
+// utility****************************
+
+// apply btn enable-------
 function enableApply (){
   if( selectedSeatCount === 4){
    const couponApply = document.getElementById('apply-btn-ID')
@@ -7,6 +9,34 @@ function enableApply (){
 
   }
  }
+
+
+
+// modal---------
+function openModal() {
+  const modal = document.getElementById('my_modal_5');
+  modal.showModal();
+}
+function closeModal() {
+  const modal = document.getElementById('my_modal_5');
+  modal.close();
+}
+document.getElementById('nextBtn-ID').addEventListener('click', function() {
+  openModal();
+});
+
+
+
+// Inner text-collector-------
+function getInnerTextbyId(elementID , value) {
+  let element = document.getElementById(elementID);
+  
+    document.getElementById(elementID).innerText = value
+  
+     
+  } 
+
+
 
 
 
@@ -18,14 +48,16 @@ function forScrollToSection(){
 
 
 }
-let selectedSeatCount = 0
 
-let seatCount = 40
+// main funtions
+let selectedSeatCount = 0
+let seatCount = 16
 let bookingCount = 0
 const seatContainer = document.getElementById('seatContainer-ID').addEventListener('click', function(event){
     const seats = this.querySelectorAll('.btn')
     
   for( let seat of seats ){
+    // not more than 4
     if( selectedSeatCount >= 4){
       alert('You can not select more than 4 seat')
       return
@@ -68,9 +100,10 @@ const seatContainer = document.getElementById('seatContainer-ID').addEventListen
       
 
 
-
+// apply btn enable function
     enableApply ()
 
+// coupon 
     document.getElementById('apply-btn-ID').addEventListener('click',function(){
       const inputText = document.getElementById('input-Id').value
       const couponElement = document.getElementById('couponBox')
@@ -90,8 +123,8 @@ const seatContainer = document.getElementById('seatContainer-ID').addEventListen
       }
     
     })
-        
-
+   
+  
 
 
 
